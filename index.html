@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hi Manikanta</title>
+</head>
+<body>
+         <h1>Hi Manikanta</h1>
+                            <!-- dom -->
+                    <!-- changing html element -->
+        <!-- <p id="p1"> Hello Sai </p>
+         <span id="mani"> </span>  -->
+
+                    <!-- changing style -->
+        <!-- <P id="p2"> Hello Vasu</P> -->
+
+                    <!-- events in javascript -->
+         <!-- <p id="p1"></p> -->
+        <!-- <input type="button" value="Click Here" onmouseout="event1()"> -->
+
+                        <!-- ON FOCUS , ON BLUR ,ON CHANGE -->
+        <!-- <input type="text" onchange="event1()"> -->
+
+                        <!-- ON SUBMIT -->
+        <!-- <form onsubmit="event1()">
+        <input type="text" name="name1">
+        <input type="submit" value="submit">
+        </form> -->
+
+                        <!-- ON RESET -->
+        <!-- <form onreset="event1()">
+            <input type="text" name="name1">
+            <input type="submit" value="submit">
+            <input type="reset" value="reset">
+        </form> -->
+
+                        <!-- form validation -->
+                        <!-- password validation -->
+        <!-- <form name="myform" method="post" onsubmit="return validpassword()" action="success.html">
+            Password:<input type="password" name="pass1">
+            <br><br>
+            Confirm Password:<input type="password" name="pass2">
+            <br><br> -->
+            <!-- <input type="submit" value="check"> -->
+                        <!-- name validation -->
+            <!-- <form name="myform" method="post"  action="success.html" onsubmit="return validname()">
+            Your Name: <input type="text" name="name1" pattern="[a-zA-Z ]{3,}">
+            <br> <br>
+            <input type="submit" value="Click Here">
+        </form> -->
+                        <!-- email validation -->
+         <!-- <form name="myform" method="post"  action="success.html" onsubmit="return validateemail()">
+            Enter Your Mail:<input type="name" name="email1">
+            <br> <br>
+            <input type="submit" value="validate">
+        </form> -->
+
+                        <!-- date validation - -->
+        <!-- <form name="myform" method="post"  action="success.html" onsubmit="return validate()">
+        Enter Your DOB:<input type="date" name="date1"required>
+        <br>
+        <br>
+        <input type="submit" value="Click Me">
+        </form> -->
+        
+                        <!-- mobile number validation -->
+        <form name="myform" method="post" action="success.html" onsubmit="return mobilevalid()">
+            Enter Your Mobile number : <input type="number" name="mobile1">
+            <br><br>
+            <input type="submit" value="submit">
+        </form>
+    <script>
+        //              FUNCTIONS
+        // function hello(){
+        //     alert('welcome to manikanta');
+        // }
+
+        //    function multiply(number) {
+        //        alert(number * number * number)
+        //   }
+        
+        // function multiply(number){
+        //     return(number * number * number);
+        // }
+        // document.write(multiply(10));
+
+        //                    VARIABLES
+        // function add(){
+        //     var x=10;
+        //     document.write('vlue of x is '+ x)
+        // }
+        //     add();
+
+        //  var x=34;
+        //     function mani(){
+        //         document.write(x);
+        //     }
+        //     mani();
+        // document.write(x+16);
+
+        //                       DATA TYPES
+        // var name='manikanta';
+        // document.write('hello ' + name);
+        // var x='mani';
+        // var y=9;
+        // z=x+y;
+        // document.write(typeof(y));
+        //                           OPERATORS
+        //                     ARTHEMATIC OPERATORS -,+,/,*,%.
+        // var x = 25;
+        // var y = 10;
+        // document.write(x++); 
+        // document.write(x++); 
+        //          ASSIGNMENT OPERATORS -=,+=,/=,*=,%=.
+        // var x=17;
+        // x*=10;
+        // document.write(x);
+        //             COMPARISION OPERATORS  ==,<=,!=,<, >, >=
+            // var x=25;
+            // var y=25;
+            // if (x==y) {
+            //     document.write('true');
+            // }else{
+            //     document.write('false');
+            // }
+                  //   BITWISE OPERATORS   &, |, ^, <<, >>, <<<, ~.
+        //    var x=45;
+        //    var y=95;
+        //    var z=65;
+        //      if(x>y & y>z) {
+        //          document.write('x is greater than y and z');
+        //      } else if(x>y &  z>y){
+        //          document.write('z is greater than x and y');
+        //      } else {
+        //          document.write('y is greater number');
+        //      }
+        //                 LOGICAL OPERATORS
+        //   var fname="mani";
+        //   var sname="kanta";
+        //   if(fname == "mani" || sname == "kanta"){
+        //         document.write("good");
+        //   } 
+
+        //                 IF-ELSE
+        // var x=10;
+        // if(x>12){
+        //     document.write('x is greater than 10');
+        // }else{
+        //     document.write('x is less than 10');
+        // }
+        // var marks=91;
+        // if(marks>90){
+        //     document.write('A grade');
+        // }else if(marks>75){
+        //     document.write('B grade');
+        // }else if(marks>50){
+        //     document.write('C grade');
+        // }else if(marks>35){
+        //     document.write('D grade');
+        // }else{
+        //     document.write('fail');
+        // }
+        //                  LOOPS
+        //                FOR LOOP
+        // for(i=1; i<=10; i++){
+        //     document.write('987*' + i + '=' +  987*i + "<br/>");
+        // }
+        //                WHILE LOOP
+        // var i=1;
+        // while(i<=50){
+        //     document.write(i + '<br/>');
+        //     i=i+2;
+        // }
+        //               DO WHILE LOOP
+        // var i=91;
+        // do{
+        //     document.write(i + "<br/>");
+        //     i=i+2;
+        // }while (i<=50);
+        //                SWITCH
+        // var marks=91;
+        // switch (true) {
+        //     case marks>90:result="A grade";
+        //         break;
+        //     case marks>75:result="B grade";
+        //         break;    
+        //     case marks>60:result="C grade";
+        //         break;
+        //     case marks>50:result="D grade";
+        //         break;
+        //     case marks>36:result="e grade";
+        //         break; 
+        //     default:result="fail";
+        //         break;               
+        // }
+        // document.write(result);  
+                        // ARRAYS
+        // var persons=['mani', 'vasu', 'atchibabu'];
+        // for(i=0; i<persons.length; i++){
+        //     document.write(persons[i]+"<br/>");
+        // }
+        //  var i=0;
+        //  var stu=new Array();
+        //  stu[0]='mani';
+        //  stu[1]='vasu';
+        //  stu[2]='atchibabu';
+        //  while (i<stu.length) {
+        //  document.write(stu[i] + "<br/>");
+        //  i++;
+        //  }
+        // var emp=new Array("mani", "sai", "atchibabu");
+        // for(i=0; i<emp.length; i++){
+        //     document.write(emp[i] + "<br/>");
+        // }
+                    //   OBJECTS
+        // var stu1={fname:"mani", branch:"ece", hno:"404"}
+        // document.write(stu1.fname + " " + stu1.branch + " " + stu1.hno);
+
+        //  var emp=new Object();
+        //  emp.name='manikanta';
+        //  emp.id=404;;
+        //  emp.salary=90000;
+        //  document.write(emp.name+ " <br/>" + emp.id + " <br/>" + emp.salary);
+
+        // function student(name,hno,address,branch){
+        //     this.name=name;
+        //     this.hno=hno;
+        //     this.address=address;
+        //     this.branch=branch;
+        // }
+        // var stu1=new student("manikanta",404,"pendurthi","ece");
+        // document.write(stu1.name + " " + stu1.hno + " " + stu1.address + " " + stu1.branch);
+                //       date and time
+        // var today=new Date();
+        // var day=today.getDate();
+        // var month=today.getMonth()+1;
+        // var year=today.getFullYear();
+        // document.write(day + " /" + month + "/" + year);
+        
+        // var today=new Date();
+        // var h=today.getHours();
+        // var m=today.getMinutes();
+        // var s=today.getSeconds();
+        // document.write(h + ":" + m + ":" + s);
+         
+        //  function getTime(){
+        //     var today=new Date();
+        //     var h=today.getHours();
+        //     var m=today.getMinutes();
+        //     var s=today.getSeconds();
+        //     document.getElementById("mani").innerHTML= h + ":" + m + ":" + s
+        //     setInterval("getTime()", 1000);
+        // }
+        // getTime();
+                //     STRING
+        // var x=new String("Mani kanta");
+        // document.write(x.slice(0,4));
+        //             MATH OBJECT
+        // var x=19;
+        // document.write(Math.sqrt(x));
+
+        // var x=2;
+        // document.write(Math.random(x));
+
+        // var x=3;
+        // document.write(Math.pow(4,4));
+
+        // x=-5;
+        // document.write(Math.abs(x));
+
+        // var x=4.999;
+        // document.write(Math.floor(x));
+
+        // var x=5.01;
+        // document.write(Math.ceil(x));
+
+        // var x=6.5;
+        // document.write(Math.round(x));
+        
+            //       BROWSER OBJECT MODEL
+
+        // var x=prompt("who are you?")
+        // document.write(x);
+
+        // function myFunction(){
+        // open("http://www.youtube.com");
+        // }
+
+        // close();
+
+        // var w=window.innerWidth;
+        // var h=window.innerHeight;
+        // document.write(w + " " + h);
+
+        // function myFunction(){
+        //     alert("hello");
+        // }
+        // setInterval(myFunction, 2000);
+
+        // function myFunction(){
+        //     alert("your time is over");
+        // } 
+        // setTimeout(myFunction, 5000);
+
+                //          NAVIGATOR OBJECT
+        // document.write(navigator.appCodeName);
+
+        // document.write(navigator.cookieEnabled);
+
+        //  document.write(navigator.platform);
+
+        // document.write(navigator.product);
+
+        // document.write(navigator.javaEnabled());
+
+            //              SCREEN OBJECT
+    //  document.write(screen.width + "<br/>");
+    //  var w=window.innerWidth;
+    //  document.write(w);
+
+    //   document.write(screen.height);
+    
+    //  document.write(screen.colorDepth);
+
+    //  document.write(screen.pixelDepth);
+
+                //          DOM
+                //        getElementsById()
+        // function getcube(){
+        //     var num=document.getElementById('number').value;
+        //     alert(num*num*num);
+        // }
+
+                //       getElementsByName()
+        // function printvalue(){
+        //     var name1=document.form1.urname.value;
+        //     alert("welcome " + name1);
+        // }
+
+                    //  CHANGING HTML ELEMENT
+                    //  CHANGING CONTENT
+       // document.getElementById("p1").innerHTML="Hello Vasu";
+                    //  CHANGING STYLE
+
+        // document.getElementById("p2").style.color="red";
+
+                     //  events in javascript
+                     //  ON CLICK , ONDBCLICK , ONMOUSEOVER , ONMOUSEOUT    
+        //  function event1(){
+        //  document.getElementById("p1").innerHTML="All values are cleared";
+        //  }
+
+                //      FORM VADILATION
+
+                //      PASSWORD VALIDATION
+        // function validpassword(){
+        //     var password=document.myform.pass1.value;
+        //     var cpassword=document.myform.pass2.value;
+
+        // if(password.length<6){
+        //     alert("password must contain 6 characters");
+        //     return false;
+        // }  
+        
+        // if(password==cpassword){
+        //     return true;
+        // }else{
+        //     alert("password and confirm password must be same");
+        //     return false
+        // }
+        // }
+
+                // NAME VALIDATION
+        // function validname(){
+        //     var name=document.myform.name1.value;
+
+        //     if(name=="null" || name==""){
+        //         alert("please provide correct name");
+        //         return false;
+        // }
+        // }
+
+                //  EMAIL VALIDDATION
+        // function validateemail(){
+        //     var email2=document.myform.email1.value;
+        //     var atposition=email2.indexOf("@");
+        //     var dotposition=email2.lastIndexOf(".");
+
+        //     if(atposition<1 || dotposition<atposition+2 || dotposition+2>=email2.length){
+        //         alert("please enter valid email");
+        //         return false;
+        //     }
+        // }
+
+                //       DATE VALIDATION
+        // function validate(){
+        //     var curdate=new Date();
+        //     var dob2=new Date(document.myform.Date1.value);
+
+        //     if(dob2>curdate){
+        //         alert("please enter valid DOB");
+        //         return false;
+        //     }
+        // }
+
+                    // MOBILE NUMBER VALIDATION
+        function mobilevalid(){
+            var mobile2=document.myform.mobile1.value;
+
+            if(mobile2.length==10){
+                return true;
+            }else{
+                alert("enter 10 digit valid number");
+                return false;
+            }
+        }
+          </script>
+                      <!-- browser object model -->
+       <!-- <input type="button" value="youtube" onclick="myFunction()"/> -->
+                    <!-- getElementsById() -->
+       <!-- <form>
+           enter num:<input type="text" id="number">
+           <br/>
+           <input type="button" value="Find Cube" onclick="getcube()">
+       </form> -->
+                    <!-- getElementsByName() -->
+        <!-- <form name="form1">
+            enter name:<input type="text" name="urname">
+            <br/>
+            <input type="button" value="print" onclick="printvalue()">
+        </form> -->
+</body> 
+</html>
